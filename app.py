@@ -33,7 +33,7 @@ def home():
     return 'hello world'
 	
 @app.route('/ping')
-def home():
+def ping():
     return jsonify('autocomplete app is up and running')
 
 
