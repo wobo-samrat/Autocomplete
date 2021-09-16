@@ -30,7 +30,12 @@ model.eval()
 
 @app.route('/')
 def home():
-    return 'autocomplete app is up'
+    return 'hello world'
+	
+@app.route('/ping')
+def home():
+    return jsonify('autocomplete app is up and running')
+
 
 @app.route('/predict',methods=['POST'])
 def predict():
