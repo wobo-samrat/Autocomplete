@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'auto-suggestion'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_15b9f123435d49b0b36d4abe66d95602 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_9592c7970a42423499a765899fc8f91a }}
