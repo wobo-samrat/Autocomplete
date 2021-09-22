@@ -1,0 +1,10 @@
+pytorch_lightning
+numpy
+nlp
+transformers==4.9.1
+torch
+wandb
+sklearn
+pandas
+pickle
+simplet5
