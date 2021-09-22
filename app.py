@@ -2,7 +2,6 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template, url_for
 import pickle
 import pandas as pd
-from simplet5 import SimpleT5
 from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
 import os
