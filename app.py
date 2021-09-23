@@ -17,7 +17,7 @@ from transformers import (
 app = Flask(__name__)
 torch_device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-model_dir = '/home/Autocomplete/model/'
+model_dir = 'model/'
 
 tokenizer = T5Tokenizer.from_pretrained('t5-small',force_download=True)
 print("model dir is :: ",model_dir)
