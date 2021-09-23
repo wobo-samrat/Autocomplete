@@ -15,12 +15,12 @@ from transformers import (
 )
 
 app = Flask(__name__)
-
+torch_device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 model_dir = '/home/Autocomplete/model/'
 print("model dir is :: ",model_dir)
 tokenizer = T5Tokenizer.from_pretrained('t5-small',force_download=True)
-model = T5ForConditionalGeneration.from_pretrained(model_dir)
+model = T5ForConditionalGeneration.from_pretrained(model_dir).to(torch_device)
 model.resize_token_embeddings(len(tokenizer))
 model.eval()
     
