@@ -17,11 +17,9 @@ from transformers import (
 app = Flask(__name__)
 
 
-
-
-model_dir = 'model/'
+model_dir = '/home/Autocomplete/model/'
 print("model dir is :: ",model_dir)
-tokenizer = T5Tokenizer.from_pretrained('t5-small')
+tokenizer = T5Tokenizer.from_pretrained('t5-small',force_download=True)
 model = T5ForConditionalGeneration.from_pretrained(model_dir)
 model.resize_token_embeddings(len(tokenizer))
 model.eval()
