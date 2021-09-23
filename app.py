@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 
 
-model_dir = os.getcwd() + '/model/'
+model_dir = '/tmp/code/Autocomplete/model/'
 print("model dir is :: ",model_dir)
 tokenizer = T5Tokenizer.from_pretrained('t5-small')
 model = T5ForConditionalGeneration.from_pretrained(model_dir)
