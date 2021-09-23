@@ -1,6 +1,6 @@
 numpy==1.19.5
 transformers==4.9.2
-torch==1.7.0
 flask==1.1.2
 sklearn
 pandas
+torch
